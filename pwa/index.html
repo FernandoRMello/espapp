@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relatórios de Ping – ESP32</title>
+    <!-- Manifesto que permite a instalação como aplicativo -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- CSS básico -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Monitoramento de Pings</h1>
+      <p>Digite o identificador do dispositivo para buscar os logs registrados.</p>
+      <form id="device-form">
+        <label for="deviceId">ID do Dispositivo:</label>
+        <input
+          type="text"
+          id="deviceId"
+          placeholder="ESP32_001"
+          value="ESP32_001"
+          required
+        />
+        <button type="submit">Buscar Logs</button>
+      </form>
+      <section id="results-section" style="display: none;">
+        <h2>Logs encontrados</h2>
+        <button id="download-csv" disabled>Baixar CSV</button>
+        <table id="logs-table">
+          <thead>
+            <tr>
+              <th>Data/Hora</th>
+              <th>Timestamp (Unix)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
