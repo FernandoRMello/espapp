@@ -3,7 +3,7 @@
  * Atualize a constante API_URL com a URL do backend implantado no Render.
  */
 
-const API_URL = 'http://SEU_SERVICO.onrender.com/api/logs';
+const API_URL = 'https://espapp.onrender.com/api/logs';
 
 const deviceForm = document.getElementById('device-form');
 const deviceInput = document.getElementById('deviceId');
