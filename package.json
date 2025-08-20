@@ -1,18 +1,13 @@
 {
   "name": "espapp-backend",
-  "version": "1.1.0",
-  "description": "API de logs para ESP32 (pings) com Express",
+  "version": "1.0.0",
+  "description": "Backend for ESP32 logs with CORS",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node index.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "morgan": "^1.10.0"
-  },
-  "engines": {
-    "node": ">=18"
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
   }
 }
