@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "/api/*"
+  # URL do backend no Render - atualize este valor com o domínio real do backend
+  to = "https://espapp.onrender.com/:splat"
+  status = 200
+  force = true
+
+  # Esta configuração redireciona requisições da PWA para a API do backend,
+  # resolvendo o problema de CORS. Altere o domínio "SEU_BACKEND.onrender.com"
+  # para o endereço do serviço implantado no Render.
