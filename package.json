@@ -1,7 +1,7 @@
 {
-  "name": "espapp-backend",
+  "name": "guardian-backend",
   "version": "1.0.0",
-  "description": "Backend for ESP32 logs with CORS",
+  "description": "Backend API for Guardian project with role based authentication",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
